@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Pragati Narrow', sans-serif;
+    background-color: black;
+}
+
+h1{font-size: 3.5em ;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px ;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px solid rgba(0, 0, 0, 0.5);
+    color: rgb(3, 46, 83);
+    background-color: rgb(255, 251, 1);
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.color-acento{
+   color: rgb(255, 251, 1);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color:rgb(6, 3, 41));
+}
+
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 251, 1);
+    font-size: 1.6em;
+}
+
+header .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(5, 22, 36);
+    background-image: url("text.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(5, 0, 31);
+    box-shadow: 2px 2px 10px solid rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#soy .container{
+    text-align: center;
+    padding: 200px 12px;
+    color:aliceblue;
+}
+
+#soy{
+    background-color: black;
+   
+}
+#soy .img-container{
+    background-image: url("ob.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 20px;
+    align-items:center;
+    padding-left: 50px;
+    flex-direction: row;
+    margin: 10px; 
+    width: 250px;
+    float: left;
+}
+
+#soy h3{
+    color: yellow;
+    text-align: right;
+    padding-right: 60px;
+
+}
+#soy p{
+
+    justify-content: center;
+    text-align:end;
+    padding: 60px;
+}
+
+#actualidad{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: black;
+    clear: both;
+}
+
+#actualidad .container{
+    padding: 100px 12px;
+}
+
+
+#actualidad h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#actualidad .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 12px;
+
+}
+
+.carta:first-child{
+      background-image: url("ice.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 20px;
+      align-items: center;
+      background-color: rgb(255, 254, 254);
+}
+
+.carta:nth-child(2){
+    background-image: url("fuel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    align-items: center;
+    background-color: black;
+}
+
+#espacio{
+    background-color: white;
+    color: white;
+}
+
+#ayuda .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#ayuda li{
+    margin: 12px 0px;
+    font-weight:bold;
+}
+
+#espacio2{
+    background-color: white;
+    color: white;
+}
+
+#final .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{ 
+    font-size: 3vw;
+}
+
+footer{
+    background-color: white;
+    justify-content:end;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: black;
+
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+     
+    }
+
+    #soy .container{
+     
+    }
+
+    #soy .img-container{
+        background-image: url("ob.png");
+        background-size: cover;
+        background-position: center center;
+        height: 1000px;
+        width: 1000px;
+
+    }
+}
